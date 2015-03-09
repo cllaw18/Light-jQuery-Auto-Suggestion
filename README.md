@@ -65,4 +65,4 @@ These javascript value was placed at the begining of las.js, the configuration i
 Offical Site:<br />
 http://tool.soyosolution.com/light-jquery-auto-suggestion/<br />
 PlainText Demo site:<br />
-http://tool.soyosolution.com/light-jquery-auto-suggestion/demo/<br />
+http://tool.soyosolution.com/light-jquery-auto-suggestion/demo.html<br />
