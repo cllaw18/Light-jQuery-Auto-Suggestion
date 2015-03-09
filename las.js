@@ -28,7 +28,7 @@ $( document ).ready(function() {
     var soyoObject = sacGetJsonData();
     //Embuded css style
     jQuery('#'+searchId).css("position","relative");
-    jQuery('#'+searchId).append('<ul id="'+sugMenuId+'" style="position:absolute; width:'+sugMenuW+'; top:'+jQuery('#'+searchBoxId).outerHeight()+'px; left:0px; background:#fff; border:1px solid #ccc; margin:0;padding:0;z-index:10; display:none;"></ul>');   
+    jQuery('#'+searchId).append('<ul id="'+sugMenuId+'" style="position:absolute; width:'+sugMenuW+'; top:'+jQuery('#'+searchBoxId).outerHeight()+'px; left:0px; list-style-type:none; background:#fff; border:1px solid #ccc; margin:0;padding:0;z-index:10; display:none;"></ul>');   
     jQuery('#'+searchBoxId).css("width",sugMenuW);
     
     //============== Hide suggestion if click outside searchbox =============
