@@ -1,6 +1,10 @@
 # Light-jQuery-Auto-Suggestion
 Light jQuery Auto Suggestion is a light jquery plugin which supporting Internet Explorer7 and the midified size is only 1.43kb (minfied).
 
+Try a demo here:
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://tool.soyosolution.com/light-auto-suggestion/las.js"></script>
+<div id="las_search_panel"><input id="las_textbox" type="text" /></div>
 ===
 ##Supported Browser
 - Internet Explorer (Tested IE7, IE8, IE9)
