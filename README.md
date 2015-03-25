@@ -1,5 +1,5 @@
 # Light-jQuery-Auto-Suggestion
-Light jQuery Auto Suggestion is a light jquery plugin which supporting Internet Explorer7 and the midified size is only 1.43kb (minfied).
+Light jQuery Auto Suggestion is a light and basic jquery autocomplete plugin which supporting Internet Explorer7 and the midified size is 1.65kb only (minfied).
 
 ===
 ##Supported Browser
@@ -31,18 +31,18 @@ Add the code where you want display the search input box:
 - Method 1) 
 If you use php for your project, you can edit the value in `lascomplete_list.php` to make json format data, and change value of `sugDataUrl` in las.js, there is a part of the code:
 ```
-    array( "key_text"=>"aaa", "desc_text"=>'aaa is a aaa'),
-    array( "key_text"=>"ccc", "desc_text"=>'ccc is a aaa'),
+    array( "key"=>"aaa", "value"=>'aaa is a aaa'),
+    array( "key"=>"ccc", "value"=>'ccc is a aaa'),
 ```
 `aaa` is the auto-suggestion keyword to be matched, `aaa is a aaa` is the description of the keyword `aaa`.
 
 - Method 2) 
 If you don't use any back-end technique for your project, you can simply edit values in `suggestlist.json` to make suggestion (and keep the default url value of `sugDataUrl` in las.js)
 ```
-[{"key_text":"aaa",
-  "desc_text":"aaa is a aaa"},
- {"key_text":"ccc",
-  "desc_text":"ccc is a aaa"}]
+[{"key":"aaa",
+  "value":"aaa is a aaa"},
+ {"key":"ccc",
+  "value":"ccc is a aaa"}]
 ```
 `aaa` is the auto-suggestion keyword to be matched, `aaa is a aaa` is the description of the keyword `aaa`.
 
@@ -51,14 +51,27 @@ These javascript value was placed at the begining of las.js, the configuration i
 
  value name  | demo default value   | Description                                               
 -------------|----------------------|-------------------------------------------
- sugDataUrl  | lascomplete_list.php | URL to get Json suggestList's data, you can use lascomplete_list.php or suggestlist.json provided at demo folder                      
+ sugDataUrl  | lascomplete_list.json | URL to get Json suggestList's data, you can use lascomplete_list.php or suggestlist.json provided at demo folder                      
  searchId    | las_search_panel     | Search Panel Wrapper Id Name which including search box.  
  searchBoxId | las_textbox          | Search Input Name Id name                                 
  sugMenuId   | las_suggestbox       | Suggest Menu Id name                                      
  sugMenuW    | 600px                | Width of Search input box and Suggest menu                
- jsonKey1    | key_text             | Json keyword field index name                             
- jsonKey2    | desc_text            | Json description field index name                         
+ sugItemH    | 25                   | Line-Height of suggested items, in pixal
+ dispNum     | 6                    | Display suggested item Number, for example, value is 6 means display 6 items
+ jsonKey1    | key                  | Json keyword field index name                             
+ jsonKey2    | value            | Json description field index name                         
 
+
+##Updates
+<b>25-Mar-2015 : v1.1</b>
+- Add a scroll bar if too many record displayed at suggestion menu.
+- Add and renew 21 json data with programming language name and description for demo purpose.
+- Better appearance, add style padding on search box and suggestion menu.
+- Add js value sugItemH and disNum for configuration.
+- Changed default json key name as "key", description key name to "value".
+<br />
+<b>09-Mar-2015 : v1.0</b>
+- Light-jquery-auto-suggestion released
 
 ===
 ##Reference Site
