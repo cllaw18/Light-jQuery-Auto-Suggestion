@@ -63,14 +63,14 @@ These javascript value was placed at the begining of las.js, the configuration i
 
 
 ##Updates
-<b>25-Mar-2015 : v1.1</b>
+**25-Mar-2015 : v1.1**
 - Add a scroll bar if too many record displayed at suggestion menu.
 - Add and renew 21 json data with programming language name and description for demo purpose.
 - Better appearance, add style padding on search box and suggestion menu.
 - Add js value sugItemH and disNum for configuration.
 - Changed default json key name as "key", description key name to "value".
-<br />
-<b>09-Mar-2015 : v1.0</b>
+
+**09-Mar-2015 : v1.0**
 - Light-jquery-auto-suggestion released
 
 ===
