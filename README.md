@@ -11,23 +11,25 @@ Light jQuery Auto Suggestion is a light and basic jquery autocomplete plugin whi
 The repositories in this project included the file shown below:
 - lascomplete_list.php
 - suggestlist.json
-- index.html
+- index.html (MUST open at server-side, otherwise can't work)
 - las.js
 - las.min.js (minfied ver of las.js)
 
 ##How to use
-1) JavaScript Part
+Before test the demo, it's strongly recommend that open the index.html at server-side, otherwise it don't work.
+
+###1) JavaScript Part
 Import jQuery and the Light-jQuery-Auto-Suggestion's javascript file.
 ```
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="las.js"></script>
 ```
-2) HTML part
+###2) HTML part
 Add the code where you want display the search input box:
 ```
 <div id="las_search_panel"><input id="las_textbox" type="text" /></div>
 ```
-3) Data Suggestion part
+###3) Data Suggestion part
 - Method 1) 
 If you use php for your project, you can edit the value in `lascomplete_list.php` to make json format data, and change value of `sugDataUrl` in las.js, there is a part of the code:
 ```
